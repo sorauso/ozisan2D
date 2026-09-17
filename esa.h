@@ -15,6 +15,7 @@ class Esa :
 	ESA_TYPE myType_;
 	int hDrawModel;
 	float counter_;
+	XMFLOAT3 setPos_;
 public:
 	//コンストラクタ
 	//引数：parent  親オブジェクト（SceneManager）

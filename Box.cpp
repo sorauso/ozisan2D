@@ -35,5 +35,5 @@ void Box::SetBoxPoint(int x, int z)
 	const float SCALE_SIZE = 3.34f;
 	int pX = x - 6;
 	int pZ = (z * -1) + 5;
-	transform_.position_ = XMFLOAT3((pX * SCALE_SIZE) + SCALE_SIZE / 2, -3, (pZ * SCALE_SIZE) + SCALE_SIZE / 2);
+	transform_.position_ = XMFLOAT3((pX * SCALE_SIZE) + SCALE_SIZE / 2, ((pZ * SCALE_SIZE) + SCALE_SIZE / 2) + SCALE_SIZE * 4.5,0);
 }

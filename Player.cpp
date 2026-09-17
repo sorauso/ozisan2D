@@ -233,7 +233,9 @@ void Player::CameraMove()
 		}
 	}
 
-	Camera::SetPosition(CAMERA_POSITION[cAngle]);
+	//Camera::SetPosition(CAMERA_POSITION[cAngle]);
+	XMFLOAT3 CameraPos = transform_.position_;
+	Camera::SetPosition(XMFLOAT3(CameraPos.x, CameraPos.y + 10, CameraPos.z - 20));
 	Camera::SetTarget(transform_.position_);
 }
 
